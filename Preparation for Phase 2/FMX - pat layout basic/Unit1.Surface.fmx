@@ -1,0 +1,14 @@
+inherited Form1_Surface: TForm1_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited Panel1: TPanel
+    Opacity = 0.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 90.000000000000000000
+  end
+  inherited MultiView1: TMultiView
+    Size.Width = 250.000000000000000000
+    Size.Height = 400.000000000000000000
+  end
+end
