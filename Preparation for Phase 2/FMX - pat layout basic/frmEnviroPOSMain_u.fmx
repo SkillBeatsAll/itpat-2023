@@ -1,10 +1,10 @@
-object Form1: TForm1
+object frmEnviroPOSMain: TfrmEnviroPOSMain
   Left = 615
   Top = 277
   Caption = 'Form1'
   ClientHeight = 480
-  ClientWidth = 638
-  Position = Designed
+  ClientWidth = 713
+  Position = ScreenCenter
   StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -12,8 +12,15 @@ object Form1: TForm1
   Left = 615
   Top = 277
   DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Size.Width = 825.000000000000000000
+    Size.Height = 63.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'Panel1Style1'
+    TabOrder = 4
+  end
   object btnOpenCloseView: TButton
-    Position.X = 552.000000000000000000
+    Position.X = 625.000000000000000000
     Position.Y = 450.000000000000000000
     TabOrder = 1
     Text = 'Open / Close'
@@ -34049,15 +34056,231 @@ object Form1: TForm1
           00000000FC04401453697A652E506C6174666F726D44656661756C74080C5374
           726F6B652E436F6C6F7207097846463430343034300000}
       end>
-    Left = 576
-    Top = 336
+    Left = 544
+    Top = 448
   end
-  object Panel1: TPanel
-    Size.Width = 744.000000000000000000
-    Size.Height = 63.000000000000000000
+  object layoutStatistics: TLayout
+    Position.X = 73.000000000000000000
+    Position.Y = 71.000000000000000000
+    Size.Width = 632.000000000000000000
+    Size.Height = 371.000000000000000000
     Size.PlatformDefault = False
-    StyleLookup = 'Panel1Style1'
-    TabOrder = 4
+    TabOrder = 5
+    object rctStat1: TRectangle
+      Fill.Color = claSlategray
+      Position.X = 20.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 165.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      object Glyph1: TGlyph
+        Position.X = 8.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        ImageIndex = 12
+        Images = dmDatabase.SVGIconImageList1
+        object FillRGBEffect1: TFillRGBEffect
+          Color = claWhite
+        end
+      end
+      object lblStat1: TLabel
+        StyledSettings = [Family, Size, Style]
+        Position.X = 49.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 108.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claWhite
+        Text = 'Statistic'
+        TabOrder = 0
+      end
+      object ColorAnimation1: TColorAnimation
+        Duration = 0.400000005960464500
+        Interpolation = Quartic
+        PropertyName = 'Fill.Color'
+        StartValue = claSlategray
+        StopValue = claSteelblue
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object rctStat2: TRectangle
+      Fill.Color = claIndianred
+      Position.X = 224.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 165.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      object Glyph2: TGlyph
+        Position.X = 8.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        ImageIndex = 14
+        Images = dmDatabase.SVGIconImageList1
+      end
+      object lblStat2: TLabel
+        Position.X = 49.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 108.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Statistic'
+        TabOrder = 0
+      end
+      object ColorAnimation2: TColorAnimation
+        Duration = 0.400000005960464500
+        Interpolation = Quartic
+        PropertyName = 'Fill.Color'
+        StartValue = claIndianred
+        StopValue = claTomato
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object rctStat3: TRectangle
+      Fill.Color = claCornflowerblue
+      Position.X = 423.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 165.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      object Glyph3: TGlyph
+        Position.X = 8.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        ImageIndex = 5
+        Images = dmDatabase.SVGIconImageList1
+      end
+      object lblStat3: TLabel
+        Position.X = 49.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 108.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Statistic'
+        TabOrder = 0
+      end
+      object ColorAnimation3: TColorAnimation
+        Duration = 0.400000005960464500
+        Interpolation = Quartic
+        PropertyName = 'Fill.Color'
+        StartValue = claCornflowerblue
+        StopValue = claDodgerblue
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object rctStat4: TRectangle
+      Fill.Color = claDarkgreen
+      Position.X = 20.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 165.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      object Glyph4: TGlyph
+        Position.X = 8.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        ImageIndex = 3
+        Images = dmDatabase.SVGIconImageList1
+      end
+      object lblStat4: TLabel
+        Position.X = 49.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 108.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Statistic'
+        TabOrder = 0
+      end
+      object ColorAnimation4: TColorAnimation
+        Duration = 0.400000005960464500
+        Interpolation = Quartic
+        PropertyName = 'Fill.Color'
+        StartValue = claDarkgreen
+        StopValue = claSeagreen
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object rctStat5: TRectangle
+      Fill.Color = claMediumvioletred
+      Position.X = 224.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 165.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      object Glyph5: TGlyph
+        Position.X = 8.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        ImageIndex = 2
+        Images = dmDatabase.SVGIconImageList1
+      end
+      object lblStat5: TLabel
+        Position.X = 49.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 108.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Statistic'
+        TabOrder = 0
+      end
+      object ColorAnimation5: TColorAnimation
+        Duration = 0.400000005960464500
+        Interpolation = Quartic
+        PropertyName = 'Fill.Color'
+        StartValue = claMediumvioletred
+        StopValue = xFFE3539E
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+    object rctStat6: TRectangle
+      Fill.Color = claSlateblue
+      Position.X = 428.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 165.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      object Glyph6: TGlyph
+        Position.X = 8.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        ImageIndex = 6
+        Images = dmDatabase.SVGIconImageList1
+      end
+      object lblStat6: TLabel
+        Position.X = 49.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 108.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Statistic'
+        TabOrder = 0
+      end
+      object ColorAnimation6: TColorAnimation
+        Duration = 0.400000005960464500
+        Interpolation = Quartic
+        PropertyName = 'Fill.Color'
+        StartValue = claSlateblue
+        StopValue = claDarkorchid
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
   end
   object MultiView1: TMultiView
     MasterButton = SpeedButton3
@@ -34069,29 +34292,29 @@ object Form1: TForm1
     Size.Height = 400.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
-    object SpeedButton2: TSpeedButton
+    object btnHelp: TSpeedButton
       HitTest = False
-      Images = ImageList1
-      ImageIndex = 2
+      Images = dmDatabase.SVGIconImageList1
+      ImageIndex = 4
       Position.X = 4.000000000000000000
-      Position.Y = 65.000000000000000000
+      Position.Y = 415.000000000000000000
       Size.Width = 209.000000000000000000
       Size.Height = 65.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'SpeedButton2Style1'
-      Text = 'SpeedButton2'
+      Text = 'Help'
     end
-    object SpeedButton1: TSpeedButton
+    object btnSales: TSpeedButton
       HitTest = False
-      Images = ImageList1
+      Images = dmDatabase.SVGIconImageList1
       ImageIndex = 6
       Position.X = 4.000000000000000000
-      Position.Y = 138.000000000000000000
+      Position.Y = 255.000000000000000000
       Size.Width = 217.000000000000000000
       Size.Height = 56.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'SpeedButton2Style1'
-      Text = 'SpeedButton2'
+      Text = 'Sales'
     end
     object ToolBar1: TToolBar
       Size.Width = 65.000000000000000000
@@ -34101,8 +34324,8 @@ object Form1: TForm1
       OnMouseEnter = ToolBar1MouseEnter
       object SpeedButton3: TSpeedButton
         HitTest = False
-        Images = ImageList1
-        ImageIndex = 5
+        Images = dmDatabase.SVGIconImageList1
+        ImageIndex = 18
         Position.X = 4.000000000000000000
         Position.Y = 8.000000000000000000
         Size.Width = 61.000000000000000000
@@ -34110,325 +34333,42 @@ object Form1: TForm1
         Size.PlatformDefault = False
       end
     end
-  end
-  object ImageList1: TImageList
-    Source = <
-      item
-        MultiResBitmap.LoadSize = 0
-        MultiResBitmap = <
-          item
-            Scale = 3.000000000000000000
-            Width = 48
-            Height = 48
-            PNG = {
-              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
-              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              01D1494441546843EDD9514E83401006604AD385677D5313E3093C823E78B736
-              5EC368E21D7CD0237888F6A5EA33D0B43AB3FE4E8AB06503A55B92F95E3A0CDD
-              6517B6030D91524A1DAFCD6673B15EAF9FF23C5F7C1F181F938EFD486338C770
-              6A8DF059C183A74EDED3343D412A081AC3A731E63A8EE3395225313E2BE824DC
-              871E3C4B92E494C782CD0AE704E8F2DD200C8EC6728BB0C2B984781D22B44604
-              E141F81EDF7905864227105AAF13E01ACEB5BCCD7D045D08EAEB12A11FF42390
-              F6C683CFB2EC03CD3BA3BE96D4E715BA6F867602696F7CE6D1746FA8CF67742F
-              7A5B42BB6A775B4551DC2114BDDD07BAB6FFD3D48F56A1D0824C805685A1DFC8
-              94CB2B1E9BA79CC3EEFDE0B5B70D696F682690B66873F69B2D99617709F609A4
-              9BE1FB02696F682690B6A89ACC91169CC3EE12EC16480BFD0DB431994C1E108A
-              BA5C27B86202696F682690B668D3FB476C1B6F415AE88D2C349D80CB6AB55A20
-              B47829B481E6163D527F2114BD4D603C1EBF22DC1B63CC0BC266380102696F83
-              FF43C3781254225BFDA5FC8FFAAAFD4BD95B19EDCAF7F85A85421BFC049CEB9A
-              1F6FE901EB0C9B41F13D854A68ED7B02E715A03AFE8630B85DF714E715A0B235
-              88171C3BF124A88E1FF52B26A5940A298A7E00ED545DA9305ACFC50000000049
-              454E44AE426082}
-            FileName = 
-              'C:\Desktop Shortcuts and Stuff\Schooling\Grade 12\Information Te' +
-              'chnology\Icons - PAT\2x\outline_account_balance_wallet_white_24d' +
-              'p.png'
-          end>
-        Name = 'outline_account_balance_wallet_white_24dp'
-      end
-      item
-        MultiResBitmap.LoadSize = 0
-        MultiResBitmap = <
-          item
-            Scale = 3.000000000000000000
-            Width = 48
-            Height = 48
-            PNG = {
-              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
-              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              0103494441546843EDD9DF0D8230100670845006F04D877005E7730FF7700587
-              803707A004B4672E06030524C867CDF77BA19CD1DE79E79FA41111D1EF6A9A66
-              5FD7F5B92CCBE2BE32D953F6961C349D5E1BBD76C813ADB5D72CCBB61A827085
-              DC8C3187388E730DBD89F5DAE1DE84133A792139482E7ADBE12DC0B5EFA84BB8
-              A15CBC232473A8CBA78DA3CB554CDDDFDB8150B00034580132E36D1AFE183B80
-              C602D058808F7EB9BC687871EC005AF005CCFE373AF6F898A55E9F2384C6027C
-              6486DB34BC3876008D05A0055FC0EC5FE26F9BBA3F4708ED7F3F03D6DA3C4DD3
-              9DDE4255555518637ACF09BC1D4892E4A24BB8A15CBC1D08E580635008474C44
-              444851F400B8CA88A415A6000F0000000049454E44AE426082}
-            FileName = 
-              'C:\Desktop Shortcuts and Stuff\Schooling\Grade 12\Information Te' +
-              'chnology\Icons - PAT\2x\outline_analytics_white_24dp.png'
-          end>
-        Name = 'outline_analytics_white_24dp'
-      end
-      item
-        MultiResBitmap.LoadSize = 0
-        MultiResBitmap = <
-          item
-            Scale = 3.000000000000000000
-            Width = 48
-            Height = 48
-            PNG = {
-              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
-              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              0384494441546843ED993B6F13411485E3B51D25C2208C11E221041508EA041A
-              840415FC00A0A48722050DBF007E41A8A0038916910EA4485408E8A0810A250A
-              20D91204A3C88E5F9C333E5EC5996577F611072BFEA4D5DE79DC7BCFCCEC7BA7
-              264CD8E3E4B44F45AFD7CB61BB90CBE5AE74BBDD39D8673A9DCEE1E9E9E9636C
-              DFDCDCFC9ECFE76B68FFE279DE07B42FC37E87AD6702EC16107B02421F42E02A
-              44C5823EF4650C851B1D487A08C9176BB55A437A12C3188CC5980ABFB320D1CD
-              46A35153FECC604CC6569AEC418E0266EA513FDDCEA11C05A5CD06CCCC2C02BF
-              ECA7D879988B39953E1D88C7995FEA878EA6DD6E7F44F2056CE7502C71A3CD3A
-              B6994E0E2867FA95D0924652AD569B107907A627570BB6B10FFB1AA708985BAE
-              C940B25B8A158AC45F955B24ECEB3A086A905B3CE058C195A1AA38A1A0EF5DB9
-              39431FB987420DD4223777B07C8B8A118A8EEBA1C3060979837BD66C36BF71A3
-              CD3A351BE8E37A4E508BDCDC6032D79B14FA2EC8CD40DFA0FB84AEF34383A0AF
-              9A43A196EDBEA160C40FE41B09029F979B81B3AD260BB6A99B81BE6A8A849AE4
-              160EFA7A784E59E9BB450311FBE56A80EF9A9A2CD8A66E06FAAA291269B2AE70
-              56053ACD178BC5932A468227CADF268380EF713559B45AAD92CCD85013C2CFAB
-              E8630D808FC43233676666E6B5CC0167B57722489B35002CEB9CCC4CC149FC13
-              02EEAB68C08CDE90E98493B638B7FB18FC42F2A1E547F954BD5EFFA37627A84D
-              EE3ED60AA0D3519999B0B1B1C173E41ADEC4DEAB8A337F100378512A95F6A9CA
-              09276D59BCA40CD023C6658536A07C0042DEAA4B2CA84D617CAC15C8924AA572
-              0F33FF46458A9FC5B684F7E38BAACA1ED7E79F2830CB9FB0CB2BAC0137A3E7FD
-              D664509B42F9582B5028147EC84C0566FE31AE3A1D1539FBD75197ECC9520469
-              0BBA0F7C96999657DA1B3081B7652626489B35007EB791999615ED0D387C2EC9
-              4C4C90366B0098A96599A940B2BA4CC3FAFAFA11998909D2667D9943270FCF2C
-              5FE33C0F8D02685A85A6D3388CBAAA32049D035D5CE69EAAF8DF404DDBC5FF13
-              5C319C5F684641D80B8DB50204C7EF5AB95C7EA2E2AE432DD4A4A21B18B1F34B
-              7D100AE3A3EAD85003B5284C3CE0E8F459250885F051756CA841219281EB77A2
-              EFA172F751752C985BEEC9419C589F1607C8DD47D5CE2867361F79B18CE3FB71
-              7700E28EEFE7F5AD6066C6F307C75690687C7F316D054977FD27DFDEFECD3A61
-              C2D83335F5175F9AF3BCCE447EBC0000000049454E44AE426082}
-            FileName = 
-              'C:\Desktop Shortcuts and Stuff\Schooling\Grade 12\Information Te' +
-              'chnology\Icons - PAT\2x\outline_help_white_24dp.png'
-          end>
-        Name = 'outline_help_white_24dp'
-      end
-      item
-        MultiResBitmap.LoadSize = 0
-        MultiResBitmap = <
-          item
-            Scale = 3.000000000000000000
-            Width = 48
-            Height = 48
-            PNG = {
-              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
-              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              01EA494441546843ED97414EC240188569032B5D1AD7261EC0052770E1155C78
-              0737269EC1851EC2856770E1095C7001E3DEB822D184C4064A7DAF7D0C2D4C2D
-              C2D4B671BEA4699979FF9B3750FA43CFE3F1781A25D0D939499204F3F9FC96D7
-              61185E074190A4135D00E107711C3FE09CA2EB81A6DB0D82EE23F0539A3C87C6
-              F6256B27B8650E11729426B633A246F2768160C7D3E9F455414BA1865A95B503
-              E41A4651F49E455C329BCD9E79E8A541DAA1CA9B05EFE6D96432F9CCA22DC13D
-              FF88B93D1EBCD6B08135AC954D3320C0C5783C8E9429CF3D8EBE64FC84FA1A2B
-              C05A7A48F6B760E12B048895C58077FB469235382799811EF492A47EB0668020
-              77D9F24B14E452B252A829D9383D6B6BAC2958A0D0A01620D017829D4B5609B5
-              AC51B941DEF5343C185B1B14BE8C1F08742AD9C6B086B5B231680DB70D0F8B59
-              1B141E876F983B91ECD7B0961EB2CBE3AEE1C1C8DAA030F682D391645B430F79
-              1570D2F0E0636D50E240B29DA157665964A78687DD5B1BD402C99C21DB35B66A
-              7828286B5006499D215B2BCCC24C92FE0C84D606B58AE4CE906D29CCC46C921B
-              366E1C34D1650AFE61156A57E7ABA8AA5F9D2F23D4B9B3F80D344D6D1BE03D9C
-              47C3CEF19F40D3F80D348DDF40D3747E035BFF16AA62F5D9BF6B7D19FE166A9A
-              CE6FC0E3F1783CFF995EEF1B1C27BA8523CFCB900000000049454E44AE426082}
-            FileName = 
-              'C:\Desktop Shortcuts and Stuff\Schooling\Grade 12\Information Te' +
-              'chnology\Icons - PAT\2x\outline_home_white_24dp.png'
-          end>
-        Name = 'outline_home_white_24dp'
-      end
-      item
-        MultiResBitmap.LoadSize = 0
-        MultiResBitmap = <
-          item
-            Scale = 3.000000000000000000
-            Width = 48
-            Height = 48
-            PNG = {
-              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
-              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              0166494441546843EDD94B4EC3301080E1D4919C03B0E40E70054EC516B1E51E
-              700E2E435920F67928014FF43352432B55B2A7C6C89F54C519D9CE4CE3B451D2
-              545555FD6F5F918661D8CFF3FCBC2CCB35531ED8B1352349D08C120AF9F4DEDF
-              3AE7DE08AD1CDB3FAFEBBAABF05D3CB1AB8A294084A5744753992FA158DB25B8
-              0B68AE8A3A03C7D40272332920FC663FC887DDB248E272E18914453095226C23
-              247CCF71546C114CA308DB08C9DEF47DFFC1B1544C114CA108DB495D04C31561
-              5B298B60A8226C2F55110C53842F2345110C51844FA39FB9738BA0BB227C1AFD
-              2EE29C22E8AA08ABE26F257EA15073664B28A52C17712A2992170C53846DA54A
-              5E305411B6933279C17045D846EAE4055328C23642A265DF4E0B49986345272F
-              984A1156268F557E1277CE3DAE8108DBA4B78F55EA73A1DC6A01B9995F03DB35
-              1C639AA6BDF7FEE03D415167A06DDB579AAA983350EC0B8E711CDFC3FFCACBB1
-              E4ABAAAA726B9A6FA223336C9DC927670000000049454E44AE426082}
-            FileName = 
-              'C:\Desktop Shortcuts and Stuff\Schooling\Grade 12\Information Te' +
-              'chnology\Icons - PAT\2x\outline_login_white_24dp.png'
-          end>
-        Name = 'outline_login_white_24dp'
-      end
-      item
-        MultiResBitmap.LoadSize = 0
-        MultiResBitmap = <
-          item
-            Scale = 3.000000000000000000
-            Width = 48
-            Height = 48
-            PNG = {
-              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
-              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              0042494441546843EDD5B111C030080340F0FE3B272E687C1980F8F86FA45695
-              020060B0ACFC78B6AABF905BD5C3AABC960100B379E26E0600CCE689BB190000
-              40978817A5B30C16289261D40000000049454E44AE426082}
-            FileName = 
-              'C:\Desktop Shortcuts and Stuff\Schooling\Grade 12\Information Te' +
-              'chnology\Icons - PAT\2x\outline_menu_white_24dp.png'
-          end>
-        Name = 'outline_menu_white_24dp'
-      end
-      item
-        MultiResBitmap.LoadSize = 0
-        MultiResBitmap = <
-          item
-            Scale = 3.000000000000000000
-            Width = 48
-            Height = 48
-            PNG = {
-              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
-              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              04E1494441546843ED994B8B1C551886A77BDA99282309DE5082178864A30B95
-              A8A00B475DB889EE348888B87063F40F04744044415782712108BA1004176AE2
-              2A4494E0C6200ABA314141BC10214189E2DCA7DBE73DE79D4A57D5E99AEAEA89
-              A1C93C50D4A9F3BDDFA54E9DEA3A553DB1C51617392DEF47A2D7EBB5D8EE6AB5
-              5AF777BBDD3DB477AFADAD5D353535759DECCBCBCBA7262727CF603FD96EB7BF
-              C6FE39EDE36CBD10E04241B13B29F4550AFC95A286423EF2550C87FBFF20E915
-              243FB8B0B0B0E87A1AA3188AA5980E7F7E21D1638B8B8B679C7FD3504CC5769A
-              CD871C1D46EAAD98AE0C23B984FD0845ECE77096FDCDEC67B4B9ADBEFDD248CB
-              7112E7E838EDE640E24B097C38A6C8B3B4B4F4870A63BBDCF20D91563EF27598
-              1CCAA59C968F06F134F29FC6D0E7D0DC25C91CCD194B73E073342A7BBDD5D5D5
-              63EECE814957672E752F39E7E8578240A569E351BFC79224754E601DC54A5D0D
-              E5B6A41904DEE7581914F33DFDD75B9204FBBD2B2B2B27ECA29FCC9FE9DBCB36
-              6D4909C5546CBB64D0BFCF92E1C0F14A7E194E3B4EC0233FB0786C0FF6175EC4
-              FE4F595E42B18B574235A8164BEAC3E53BE81801CFF981D306DB9368562DAF84
-              D82FDBAD847214EF09D562733D08B2B31884BE399B4B60DB857EDED280468EC4
-              87D83E660AFDE2EE005A5CBA7BED5E42B92C0DA816FAEA3FB149FA8A7D035CD6
-              53EC92BF3602FD9B5119913F09B3F94E578BE3672964252A7A3DA6DA8FECDA96
-              E4A07FC6393314D3E66AD0B68B23A6E43627713181AA5F1CE2BCA0D1A498F768
-              EF717712E574C8806B4A9E700E1CEF8E2E1112EAA9B9DDE62468FE89EA3052AF
-              BBBB04E6CB887FB50F2B41BBDDB933549BCD19A533D292D8CD004B622D7DCFFA
-              3049A7D3F9CD4D25BE8FED121FE620CE3CCBE9D33EAC443995DB8781626DA274
-              02C54B8BD3613707425147DC9C60DD7F27313EE1246E7057638AB98BB525493C
-              4C666D1A08816FE472FF657DC097FF5DB659B6462F4EF6CD506D360DA6F8F0A2
-              B8DD365582EE018A3E6BB71C7E797909CD502F2FCAED1001D566D36028A2F8FB
-              3FCC2A7317857E408CAEDD732836F6D7686EB34B25CA1D3D23F2B76930A39CC0
-              3AF8DC4EA1EF10EB6F87C9C154F806CD86CB834627D0740AA5C07D1BFE4F53F0
-              F1182DC7176C95F786724769A4D614D28D62FD3A1BDEC475A0982718C13F1D33
-              40DFC3362741B2E14D9C7A0E9C703380DF2D6E8E043FB5EF4F4F4F3FCA28669F
-              5288FD909B498AB98BB589D209E8BB8D9B0182548E9240B383D17C9EED457725
-              21F6673CF44EFA50DCE47D9262EE626D492862A8A504FA0368C24A94FDBFECAE
-              B52909D3E04B6905377AF6002C82B9D652A204BAA11673D89EB32C40511FB14B
-              2EBAD0E696E968DFB6A984725A16A8BD981304AEBD9C563FC17F0F4283FF8714
-              708D25018EEF60F4BFB524405F727A626ABE9C16C59112F455BDD03C827ECDD2
-              80FC355D487C88FD77EECEA0EF2B76930E9143B9A22AA258AAC9E67A9078D857
-              CA67D0642F2C55F0FEF003BBE4624F39942B2A23AAC5E6FA1068E8977A24B7B1
-              E9019584C2E629E60D9AC91F05C5568EA88EA806D562C970E0D8F4B3CAADFD5F
-              2768FF44DFE3347758524231153B7A9C433558D20C46ACD1872D8A3966B9A6C0
-              51772751ACE2C80BE5B6A439C469F469B1CE09603AFF9F160549C6F7E3EE3AC4
-              1DDFCFEBFD50C478FEC1D10F89C6F72FA67E487AC1FFE4BBB8FF66DD628BB167
-              62E23FB3BA5936ABECB59B0000000049454E44AE426082}
-            FileName = 
-              'C:\Desktop Shortcuts and Stuff\Schooling\Grade 12\Information Te' +
-              'chnology\Icons - PAT\2x\outline_paid_white_24dp.png'
-          end>
-        Name = 'outline_paid_white_24dp'
-      end
-      item
-        MultiResBitmap.LoadSize = 0
-        MultiResBitmap = <
-          item
-            Scale = 3.000000000000000000
-            Width = 48
-            Height = 48
-            PNG = {
-              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
-              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
-              0157494441546843ED96414EC33010455322E512D03374C71D38093BAEC71140
-              ACE815CA0D60172529FFBB1F4B4D5A9CE004D7D53C298A33E378FEC8334E0AC3
-              308CA4AC741FCD1E68B8082BA0E1286E74CF164B2035D13D30B566FBC4AE6725
-              941A4B2035D79B000E87AAEBBAA7A6695EEABAFEE26941E4F6C8FC67B48C47E6
-              3D63323635E0B1927B1C78E9162FBF1F964A0FB55093E41D31387331BF6ADBF6
-              AD2CCB8D4C1701346DA1E91E9F895A26C7A08490C0E3A58927D4446D7A3C0FB6
-              EB95DBF603327FC6F6DDC9FD6F3026634B8683DAE43E0F9AE753F31D58682DD7
-              A220CE03627FF0E258B6B56438A8CD4DFE0DCDF5C8BC3810B753480ADDC91CD4
-              93FD77608012F5C8BC38A74A8848864766CFA963F46852ECEF722C213D9313E8
-              FBE72614AFEFB79FB9D4649F40B00742F46B722AB1F1AC8452737D3D10A25FB3
-              73F7C0D4F5AC8452633D3037D603B9917D0286611829298A6F015B06DBD9E88F
-              380000000049454E44AE426082}
-            FileName = 
-              'C:\Desktop Shortcuts and Stuff\Schooling\Grade 12\Information Te' +
-              'chnology\Icons - PAT\2x\outline_print_white_24dp.png'
-          end>
-        Name = 'outline_print_white_24dp'
-      end>
-    Destination = <
-      item
-        Layers = <
-          item
-            Name = 'outline_account_balance_wallet_white_24dp'
-          end>
-      end
-      item
-        Layers = <
-          item
-            Name = 'outline_analytics_white_24dp'
-          end>
-      end
-      item
-        Layers = <
-          item
-            Name = 'outline_help_white_24dp'
-          end>
-      end
-      item
-        Layers = <
-          item
-            Name = 'outline_home_white_24dp'
-          end>
-      end
-      item
-        Layers = <
-          item
-            Name = 'outline_login_white_24dp'
-          end>
-      end
-      item
-        Layers = <
-          item
-            Name = 'outline_menu_white_24dp'
-          end>
-      end
-      item
-        Layers = <
-          item
-            Name = 'outline_paid_white_24dp'
-          end>
-      end
-      item
-        Layers = <
-          item
-            Name = 'outline_print_white_24dp'
-          end>
-      end>
-    Left = 576
-    Top = 384
+    object btnNewOrder: TSpeedButton
+      Images = dmDatabase.SVGIconImageList1
+      ImageIndex = 0
+      Position.X = 4.000000000000000000
+      Position.Y = 127.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'SpeedButton2Style1'
+      Text = 'New Order'
+      OnClick = btnNewOrderClick
+    end
+    object btnCustomers: TSpeedButton
+      Images = dmDatabase.SVGIconImageList1
+      ImageIndex = 1
+      Position.X = 4.000000000000000000
+      Position.Y = 191.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'SpeedButton2Style1'
+      Text = 'Manage Customers'
+      OnClick = btnCustomersClick
+    end
+    object btnHome: TSpeedButton
+      EnableDragHighlight = False
+      Images = dmDatabase.SVGIconImageList1
+      ImageIndex = 13
+      Position.X = 4.000000000000000000
+      Position.Y = 63.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'SpeedButton2Style1'
+      Text = 'Home Screen'
+      OnClick = btnHomeClick
+    end
   end
 end

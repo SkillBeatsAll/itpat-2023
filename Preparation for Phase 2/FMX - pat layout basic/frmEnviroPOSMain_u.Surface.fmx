@@ -1,0 +1,12 @@
+inherited frmEnviroPOSMain_Surface: TfrmEnviroPOSMain_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited layoutStatistics: TLayout
+    Enabled = False
+  end
+  inherited MultiView1: TMultiView
+    Size.Width = 250.000000000000000000
+    Size.Height = 400.000000000000000000
+  end
+end

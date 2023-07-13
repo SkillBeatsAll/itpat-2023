@@ -1,0 +1,9 @@
+Order from Joel Cedras
+Product Name		Product Code		Cost		Qty		Total Cost
+
+Fruit Juice		FJ-1001		150		2		300		
+
+Sour Apple Jam		SAJ-1001		75		2		150		
+
+										
+Total order cost: 		$450.00
