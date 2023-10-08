@@ -1,0 +1,42 @@
+inherited frmEnviroPOSMain_Surface: TfrmEnviroPOSMain_Surface
+  ClientHeight = 1920
+  ClientWidth = 1080
+  DesignerMasterStyle = 0
+  inherited layoutStatistics: TLayout
+    Enabled = False
+    inherited rectStat1: TRectangle
+      inherited lblStatValue1: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited rectStat2: TRectangle
+      inherited lblStatValue2: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited rectStat5: TRectangle
+      inherited lblStatValue5: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited rectStat6: TRectangle
+      inherited lblStatValue6: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited rectStat4: TRectangle
+      inherited lblStatValue4: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    inherited rectStat3: TRectangle
+      inherited lblStatValue3: TLabel
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+  inherited MultiView1: TMultiView
+    Size.Width = 250.000000000000000000
+    Size.Height = 400.000000000000000000
+  end
+end
