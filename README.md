@@ -1,4 +1,4 @@
-
+![EnviroPOS Logo](/Logo.svg)
 IT Practical Assessment Task - 2023 _Grade 12_
 ==========================================
 
