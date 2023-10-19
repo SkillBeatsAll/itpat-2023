@@ -96,6 +96,8 @@ well-rounded application related to the topic.
 This project can be compiled and run through the Delphi IDE (RAD Studio). The executable file will be saved under `/Win32/Debug` in the project folder, which can then be distributed.  
 Note that this project was created using *Rad Studio 11*, and might not compile in older versions of Rad Studio.
 
+**VERY IMPORTANT:** For this PAT to compile, _**YOU MUST INSTALL `SVGIconImageList` AS A GetIt PACKAGE!**_
+
 ## Getting help
 You can contact me via [email](mailto:joelcedras@gmail.com), via [Twitter](https://twitter.com/JoelBeatsAll), or via [Discord](https://discordhub.com/profile/234576713005137920).
 
