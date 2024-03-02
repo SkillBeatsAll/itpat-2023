@@ -104,7 +104,7 @@ You can contact me via [email](mailto:joelcedras@gmail.com), via [Twitter](https
 License  
 -------  
   
-This project is distributed under the terms of the [MIT license](/LICENSE.MD). The license applies to this file and other files in the [GitHub repository](http://github.com/SkillBeatsAll/itpat-2023) hosting this file.
+This project is distributed under the terms of the [MIT license](/LICENSE). The license applies to this file and other files in the [GitHub repository](http://github.com/SkillBeatsAll/itpat-2023) hosting this file.
 
 ```
 MIT License
